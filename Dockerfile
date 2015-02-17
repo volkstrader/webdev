@@ -11,11 +11,11 @@ RUN npm install -g generator-webapp
 # Install AngularJS generator
 RUN npm install -g generator-angular
 
-# Create /app directory
-RUN mkdir /app
+# Create /src  directory
+RUN mkdir /src 
 
 # Define working directory
-WORKDIR /app
+WORKDIR /src 
 
 # add a dev user for yo, which run as root UID (501)
 # ref: https://github.com/yeoman/yeoman.io/issues/282
